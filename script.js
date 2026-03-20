@@ -29,3 +29,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Scroll reveal — editorial fade-in
+const revealSections = document.querySelectorAll('.reveal');
+const revealOnScroll = () => {
+  revealSections.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    const inView = rect.top < window.innerHeight * 0.85;
+    if (inView) el.classList.add('visible');
+  });
+};
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
