@@ -585,7 +585,19 @@ body {
 
 .labs-content {
   max-width: 560px;
-  margin: 0 auto;
+  margin: var(--space-xl) auto 0;
+}
+
+.philosophy-content .labs-content {
+  max-width: 420px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--grey-light);
+}
+
+.philosophy-content .labs-content .section-label {
+  margin-top: 0;
 }
 
 .labs-title {
