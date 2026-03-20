@@ -44,7 +44,7 @@
   
   /* Typography */
   --font-editorial: 'Cormorant Garamond', Georgia, serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   
   /* Spacing */
   --space-xs: 0.5rem;
@@ -516,15 +516,19 @@ body {
 .philosophy {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 70vh;
+  min-height: auto;
   background: var(--cream);
 }
 
 .philosophy-content {
-  padding: var(--space-lg);
+  padding: var(--space-md) var(--space-lg) var(--space-lg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.philosophy-content .section-label {
+  margin-bottom: var(--space-xs);
 }
 
 .philosophy-title {
@@ -533,15 +537,19 @@ body {
   font-weight: 400;
   font-style: italic;
   color: var(--blush-title);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .philosophy-text p {
   font-size: 0.95rem;
-  line-height: 1.8;
+  line-height: 1.7;
   color: var(--charcoal);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
   max-width: 420px;
+}
+
+.philosophy-text p:last-child {
+  margin-bottom: 0;
 }
 
 .philosophy-visual {
@@ -718,7 +726,7 @@ body {
   }
   
   .hero {
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
   
   .service-entry {
