@@ -704,6 +704,67 @@ body.splash-visible {
   color: var(--charcoal);
 }
 
+.labs-app {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--grey-light);
+}
+
+.labs-app-name {
+  font-family: var(--font-editorial);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: var(--space-xs);
+}
+
+.labs-app-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+  margin-bottom: var(--space-lg);
+}
+
+.labs-app-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-sm);
+}
+
+.labs-app-qr {
+  display: block;
+  line-height: 0;
+}
+
+.labs-app-qr img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.labs-app-qr:hover img {
+  opacity: 0.9;
+}
+
+.labs-app-cta {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brown);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.labs-app-cta:hover {
+  opacity: 0.7;
+}
+
 /* ============================================
    Contact
    ============================================ */
