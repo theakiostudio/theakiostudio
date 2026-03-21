@@ -1,3 +1,15 @@
+// Splash screen
+const splash = document.getElementById('splash');
+if (splash) {
+  document.body.classList.add('splash-visible');
+  const hideSplash = () => {
+    splash.classList.add('hidden');
+    document.body.classList.remove('splash-visible');
+    setTimeout(() => splash.remove(), 700);
+  };
+  setTimeout(hideSplash, 2200);
+}
+
 // Mobile navigation toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navMain = document.querySelector('.nav-main');
